@@ -506,3 +506,41 @@ a {
     min-height: 96px;
   }
 }
+.cards-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.cards-2 > * {
+  min-width: 0;
+}
+
+.cards-2 a,
+.org-card,
+.affiliation-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--surface);
+  border: 1px solid #e8e1d9;
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+}
+
+.cards-2 a p,
+.org-card p,
+.affiliation-card p {
+  margin: 14px 0 0;
+  color: #374151;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.cards-2 a .btn,
+.org-card .btn,
+.affiliation-card .btn {
+  margin-top: 18px;
+}
