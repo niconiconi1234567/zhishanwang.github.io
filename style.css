@@ -107,3 +107,23 @@
     @media(max-width:560px){#zw-academic-site .zw-portrait{height:108px;width:76px}#zw-academic-site .zw-evolution-entry{padding:15px}#zw-academic-site .zw-evolution-entry strong{font-size:20px}}
   
 #zw-academic-site{max-width:1180px;margin:0 auto}#zw-academic-site .zw-nav a{font-family:Arial,Helvetica,sans-serif;line-height:1.75;display:block;text-decoration:none}#zw-academic-site a:focus-visible,#zw-academic-site button:focus-visible,#zw-academic-site summary:focus-visible{outline:2px solid var(--zw-accent);outline-offset:4px}#zw-academic-site .zw-honors td:first-child{min-width:64px;padding-right:12px}#zw-academic-site img{max-width:100%}
+
+/* OWN1 interactive football research */
+#zw-academic-site .zw-own1-feature{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.8fr);border:1px solid var(--zw-line);background:var(--zw-soft);color:var(--zw-ink);text-decoration:none;overflow:hidden}
+#zw-academic-site .zw-own1-feature-image{display:block;min-width:0;background:var(--zw-paper)}
+#zw-academic-site .zw-own1-feature-image img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover}
+#zw-academic-site .zw-own1-feature-copy{display:flex;flex-direction:column;justify-content:center;padding:27px 28px;min-width:0}
+#zw-academic-site .zw-own1-feature-copy>strong{display:block;font-family:var(--zw-title);font-size:27px;font-weight:400;line-height:1.25;color:var(--zw-accent);margin-top:10px}
+#zw-academic-site .zw-own1-feature-copy .zw-card-description{font-size:14px;line-height:1.8;margin-top:15px}
+#zw-academic-site .zw-own1-feature-copy .zw-card-open{margin-top:2px}
+#zw-academic-site .zw-own1-feature:hover{border-color:var(--zw-accent)}
+#zw-academic-site .zw-own1-feature:hover .zw-own1-feature-copy>strong{text-decoration:underline;text-underline-offset:4px}
+#zw-academic-site .zw-own1-research-feature{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(270px,.9fr);gap:28px;align-items:center;margin-top:34px;padding:28px 0;border-top:1px solid var(--zw-line);border-bottom:1px solid var(--zw-line)}
+#zw-academic-site .zw-own1-research-feature figure{margin:0;min-width:0}
+#zw-academic-site .zw-own1-research-feature figure img{display:block;width:100%;height:auto;background:var(--zw-soft)}
+#zw-academic-site .zw-own1-research-feature figcaption{font-size:11px;color:var(--zw-secondary);margin-top:8px}
+#zw-academic-site .zw-own1-research-feature h3{font-family:var(--zw-title);font-size:27px;font-weight:400;line-height:1.3;color:var(--zw-accent);margin:10px 0 14px}
+#zw-academic-site .zw-own1-research-feature p{font-size:14px;line-height:1.8}
+#zw-academic-site .zw-own1-research-feature .zw-open-link{margin-top:18px}
+@media(max-width:800px){#zw-academic-site .zw-own1-feature,#zw-academic-site .zw-own1-research-feature{grid-template-columns:1fr}#zw-academic-site .zw-own1-feature-image img{min-height:0;height:auto;object-fit:contain}#zw-academic-site .zw-own1-research-feature{gap:20px;align-items:start}}
+@media(max-width:560px){#zw-academic-site .zw-own1-feature-copy{padding:21px 19px}#zw-academic-site .zw-own1-feature-copy>strong,#zw-academic-site .zw-own1-research-feature h3{font-size:23px}}
