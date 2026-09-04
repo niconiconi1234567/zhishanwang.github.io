@@ -39,3 +39,5 @@
 正式页面已移除设计调节面板；所有新站资源使用相对路径，适用于当前 GitHub Pages 子目录。页面用 #/research 等地址支持直接分享和浏览器前进、后退。
 
 官方发布设置说明：https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+website assets uploaded
