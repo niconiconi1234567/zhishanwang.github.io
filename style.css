@@ -127,3 +127,46 @@
 #zw-academic-site .zw-own1-research-feature .zw-open-link{margin-top:18px}
 @media(max-width:800px){#zw-academic-site .zw-own1-feature,#zw-academic-site .zw-own1-research-feature{grid-template-columns:1fr}#zw-academic-site .zw-own1-feature-image img{min-height:0;height:auto;object-fit:contain}#zw-academic-site .zw-own1-research-feature{gap:20px;align-items:start}}
 @media(max-width:560px){#zw-academic-site .zw-own1-feature-copy{padding:21px 19px}#zw-academic-site .zw-own1-feature-copy>strong,#zw-academic-site .zw-own1-research-feature h3{font-size:23px}}
+
+/* OWN Tactic Version 1 → Version 2 development path */
+#zw-academic-site .zw-own-feature{border:1px solid var(--zw-line);background:var(--zw-soft);overflow:hidden}
+#zw-academic-site .zw-own-feature-visual{margin:0;background:var(--zw-paper)}
+#zw-academic-site .zw-own-feature-visual img{display:block;width:100%;height:auto}
+#zw-academic-site .zw-own-feature-visual figcaption,#zw-academic-site .zw-own-research-feature figcaption,#zw-academic-site .zw-own-v2-grid figcaption{font-size:11px;line-height:1.55;color:var(--zw-secondary);padding:8px 12px 0}
+#zw-academic-site .zw-own-feature-copy{padding:27px 28px 30px}
+#zw-academic-site .zw-own-feature-copy h3,#zw-academic-site .zw-own-research-feature h3{font-family:var(--zw-title);font-size:28px;font-weight:400;line-height:1.28;color:var(--zw-accent);margin:10px 0 14px}
+#zw-academic-site .zw-own-feature-copy p,#zw-academic-site .zw-own-research-feature p{font-size:14px;line-height:1.8}
+#zw-academic-site .zw-own-version-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:24px}
+#zw-academic-site .zw-own-version-links>a{display:flex;flex-direction:column;min-width:0;min-height:158px;border:1px solid var(--zw-line);border-left:3px solid var(--zw-accent);padding:16px 17px;color:var(--zw-ink);text-decoration:none;background:var(--zw-paper)}
+#zw-academic-site .zw-own-version-links>a:last-child{background:var(--zw-soft)}
+#zw-academic-site .zw-own-version-links>a:hover{border-color:var(--zw-accent)}
+#zw-academic-site .zw-own-version-links span{font-size:10px;letter-spacing:.09em;color:var(--zw-secondary)}
+#zw-academic-site .zw-own-version-links strong{font-family:var(--zw-title);font-size:20px;font-weight:400;line-height:1.35;color:var(--zw-accent);margin:8px 0}
+#zw-academic-site .zw-own-version-links small{font-size:11px;line-height:1.65;color:var(--zw-secondary)}
+#zw-academic-site .zw-own-version-links b{font-size:12px;font-weight:400;color:var(--zw-accent);margin-top:auto;padding-top:13px}
+#zw-academic-site .zw-own-research-feature{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(270px,.95fr);gap:28px;align-items:center;margin-top:34px;padding:28px 0;border-top:1px solid var(--zw-line)}
+#zw-academic-site .zw-own-research-feature figure,#zw-academic-site .zw-own-v2-grid figure{margin:0;min-width:0;background:var(--zw-soft)}
+#zw-academic-site .zw-own-research-feature figure img,#zw-academic-site .zw-own-v2-grid figure img{display:block;width:100%;height:auto}
+#zw-academic-site .zw-own-inline-actions{display:flex;flex-wrap:wrap;gap:9px 12px;margin-top:19px}
+#zw-academic-site .zw-own-inline-actions a{display:inline-block;border:1px solid var(--zw-line);padding:8px 13px;font-size:12px;text-decoration:none}
+#zw-academic-site .zw-own-inline-actions a:hover{border-color:var(--zw-accent);background:var(--zw-soft)}
+#zw-academic-site .zw-own-evolution{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:8px 0 0;padding:30px 0 4px;border-top:1px solid var(--zw-line)}
+#zw-academic-site .zw-own-evolution article{position:relative;border-top:3px solid var(--zw-line);padding:15px 6px 0 0;min-width:0}
+#zw-academic-site .zw-own-evolution article:last-child{border-top-color:var(--zw-accent)}
+#zw-academic-site .zw-own-evolution article:not(:last-child)::after{content:'→';position:absolute;right:-17px;top:-14px;color:var(--zw-secondary);font-size:16px;background:var(--zw-paper);padding:0 3px}
+#zw-academic-site .zw-own-evolution span{display:block;font-size:10px;letter-spacing:.08em;color:var(--zw-secondary);margin-bottom:9px}
+#zw-academic-site .zw-own-evolution h3{font-family:var(--zw-title);font-size:19px;font-weight:400;line-height:1.35;color:var(--zw-accent);margin:0 0 10px}
+#zw-academic-site .zw-own-evolution p{font-size:12px;line-height:1.75;color:var(--zw-secondary)}
+#zw-academic-site .zw-own-scope-note{font-size:12px!important;line-height:1.75!important;color:var(--zw-secondary);border-left:2px solid var(--zw-line);padding:2px 0 2px 15px;margin-top:24px}
+#zw-academic-site .zw-own-v2-section>h2{margin-top:8px}
+#zw-academic-site .zw-own-v2-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:24px}
+#zw-academic-site .zw-own-v2-grid article{min-width:0;border-bottom:1px solid var(--zw-line);padding-bottom:20px}
+#zw-academic-site .zw-own-v2-grid figure figcaption{padding-left:0;padding-right:0}
+#zw-academic-site .zw-own-v2-grid h3{font-family:var(--zw-title);font-size:21px;font-weight:400;line-height:1.35;color:var(--zw-accent);margin:15px 0 9px}
+#zw-academic-site .zw-own-v2-grid p{font-size:13px;line-height:1.8}
+#zw-academic-site .zw-own-collaboration{margin-top:32px;padding:24px 26px 26px;border:1px solid var(--zw-line);border-left:3px solid var(--zw-accent);background:var(--zw-soft)}
+#zw-academic-site .zw-own-collaboration h2{border:0;padding:0;margin:8px 0 11px;font-size:23px}
+#zw-academic-site .zw-own-collaboration p{font-size:14px;line-height:1.8}
+#zw-academic-site .zw-own-collaboration .zw-open-link{margin-top:15px;background:var(--zw-paper)}
+@media(max-width:800px){#zw-academic-site .zw-own-research-feature{grid-template-columns:1fr;gap:20px;align-items:start}#zw-academic-site .zw-own-evolution{grid-template-columns:1fr;gap:18px}#zw-academic-site .zw-own-evolution article:not(:last-child)::after{content:'↓';right:auto;left:18px;top:auto;bottom:-21px}#zw-academic-site .zw-own-v2-grid{grid-template-columns:1fr}}
+@media(max-width:560px){#zw-academic-site .zw-own-feature-copy{padding:21px 19px 23px}#zw-academic-site .zw-own-feature-copy h3,#zw-academic-site .zw-own-research-feature h3{font-size:23px}#zw-academic-site .zw-own-version-links{grid-template-columns:1fr}#zw-academic-site .zw-own-version-links>a{min-height:145px}#zw-academic-site .zw-own-collaboration{padding:20px 19px 22px}}
