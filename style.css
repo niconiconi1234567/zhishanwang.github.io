@@ -170,3 +170,31 @@
 #zw-academic-site .zw-own-collaboration .zw-open-link{margin-top:15px;background:var(--zw-paper)}
 @media(max-width:800px){#zw-academic-site .zw-own-research-feature{grid-template-columns:1fr;gap:20px;align-items:start}#zw-academic-site .zw-own-evolution{grid-template-columns:1fr;gap:18px}#zw-academic-site .zw-own-evolution article:not(:last-child)::after{content:'↓';right:auto;left:18px;top:auto;bottom:-21px}#zw-academic-site .zw-own-v2-grid{grid-template-columns:1fr}}
 @media(max-width:560px){#zw-academic-site .zw-own-feature-copy{padding:21px 19px 23px}#zw-academic-site .zw-own-feature-copy h3,#zw-academic-site .zw-own-research-feature h3{font-size:23px}#zw-academic-site .zw-own-version-links{grid-template-columns:1fr}#zw-academic-site .zw-own-version-links>a{min-height:145px}#zw-academic-site .zw-own-collaboration{padding:20px 19px 22px}}
+
+/* OWN2 Collective Studio · networked economy and collective estimation */
+#zw-academic-site .zw-own2-home-card{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(290px,.95fr);gap:0;border:1px solid var(--zw-line);background:var(--zw-soft);overflow:hidden}
+#zw-academic-site .zw-own2-home-card figure,#zw-academic-site .zw-own2-hero,#zw-academic-site .zw-own2-evidence figure,#zw-academic-site .zw-own2-platform figure{margin:0;min-width:0;background:var(--zw-paper)}
+#zw-academic-site .zw-own2-home-card figure{display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--zw-line)}
+#zw-academic-site .zw-own2-home-card img,#zw-academic-site .zw-own2-hero img,#zw-academic-site .zw-own2-evidence img,#zw-academic-site .zw-own2-platform img{display:block;width:100%;height:auto}
+#zw-academic-site .zw-own2-home-card figcaption,#zw-academic-site .zw-own2-hero figcaption,#zw-academic-site .zw-own2-evidence figcaption,#zw-academic-site .zw-own2-platform figcaption{font-size:11px;line-height:1.55;color:var(--zw-secondary);padding:8px 12px 10px}
+#zw-academic-site .zw-own2-home-card>div{display:flex;flex-direction:column;justify-content:center;padding:26px 27px}
+#zw-academic-site .zw-own2-home-card h3{font-family:var(--zw-title);font-size:27px;font-weight:400;line-height:1.3;color:var(--zw-accent);margin:10px 0 14px}
+#zw-academic-site .zw-own2-home-card p{font-size:14px;line-height:1.8}
+#zw-academic-site .zw-own2-hero{margin-top:4px;border:1px solid var(--zw-line)}
+#zw-academic-site .zw-own2-method>p{max-width:760px}
+#zw-academic-site .zw-own2-pipeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:24px}
+#zw-academic-site .zw-own2-pipeline article{position:relative;min-width:0;border-top:3px solid var(--zw-line);padding:14px 5px 0 0}
+#zw-academic-site .zw-own2-pipeline article:last-child{border-top-color:var(--zw-accent)}
+#zw-academic-site .zw-own2-pipeline article:not(:last-child)::after{content:'→';position:absolute;right:-13px;top:-14px;color:var(--zw-secondary);background:var(--zw-paper);padding:0 2px}
+#zw-academic-site .zw-own2-pipeline span{display:block;font-size:10px;letter-spacing:.09em;color:var(--zw-secondary);margin-bottom:8px}
+#zw-academic-site .zw-own2-pipeline h3{font-family:var(--zw-title);font-size:19px;font-weight:400;line-height:1.35;color:var(--zw-accent);margin:0 0 9px}
+#zw-academic-site .zw-own2-pipeline p{font-size:12px;line-height:1.75;color:var(--zw-secondary)}
+#zw-academic-site .zw-own2-evidence figure{border:1px solid var(--zw-line);margin:18px 0 18px}
+#zw-academic-site .zw-own2-evidence>p{font-size:14px;line-height:1.85}
+#zw-academic-site .zw-own2-platform-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(275px,.92fr);gap:27px;align-items:start;margin-top:18px}
+#zw-academic-site .zw-own2-platform-visual{border:1px solid var(--zw-line);overflow:hidden}
+#zw-academic-site .zw-own2-platform-visual img{aspect-ratio:16/8.15;object-fit:cover;object-position:center bottom}
+#zw-academic-site .zw-own2-platform-grid>div>p{font-size:14px;line-height:1.8}
+@media(max-width:900px){#zw-academic-site .zw-own2-pipeline{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 18px}#zw-academic-site .zw-own2-pipeline article:nth-child(2)::after{content:'↓';right:auto;left:18px;top:auto;bottom:-25px}}
+@media(max-width:800px){#zw-academic-site .zw-own2-home-card,#zw-academic-site .zw-own2-platform-grid{grid-template-columns:1fr}#zw-academic-site .zw-own2-home-card figure{border-right:0;border-bottom:1px solid var(--zw-line)}#zw-academic-site .zw-own2-platform-grid{gap:20px}}
+@media(max-width:560px){#zw-academic-site .zw-own2-home-card>div{padding:21px 19px 23px}#zw-academic-site .zw-own2-home-card h3{font-size:23px}#zw-academic-site .zw-own2-pipeline{grid-template-columns:1fr;gap:19px}#zw-academic-site .zw-own2-pipeline article:not(:last-child)::after,#zw-academic-site .zw-own2-pipeline article:nth-child(2)::after{content:'↓';right:auto;left:18px;top:auto;bottom:-21px}}
