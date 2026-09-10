@@ -71,13 +71,15 @@
   const pageTitles = {home:'Home',research:'Research',publications:'Papers & Reports',cv:'CV & Honors',past:'Past Projects',personal:'Personal',archive:'Archive'};
   const topicTitles = {autonomy:'Multi-Agent System Autonomy',swarm:'Swarm Intelligence',football:'Football & Collective Coordination',economics:'Networked Economy & Collective Estimation'};
   const pastTitles = {racing:'Autonomous Racing Control',lander:'FPGA Lunar Lander',sensor:'Optical Heart Rate Sensor',energy:'Real-Time Feedback for Energy Systems'};
+  const publicationTitles = {'icarcv-2026':'Task-Conditioned Distributed Relational Formation Control'};
   let currentRoute = '';
   function renderRoute() {
     let [page='home', item=''] = location.hash.replace(/^#\/?/,'').split('/');
     if (!Object.hasOwn(pageTitles,page)) page='home';
     if (page==='research' && item!=='evolution' && !Object.hasOwn(topicTitles,item)) item='';
     if (page==='past' && !Object.hasOwn(pastTitles,item)) item='';
-    if (page!=='research' && page!=='past') item='';
+    if (page==='publications' && !Object.hasOwn(publicationTitles,item)) item='';
+    if (page!=='research' && page!=='past' && page!=='publications') item='';
     root.querySelectorAll('[data-panel]').forEach(panel => { panel.hidden=panel.dataset.panel!==page; });
     root.querySelectorAll('[data-page]').forEach(link => {
       if(link.dataset.page===page) link.setAttribute('aria-current','page');
@@ -93,7 +95,11 @@
     root.querySelector('#zw-past-overview').hidden=isPast;
     root.querySelector('#zw-past-detail').hidden=!isPast;
     root.querySelectorAll('[data-past-panel]').forEach(panel => { panel.hidden=!isPast || panel.dataset.pastPanel!==item; });
-    const title = isTopic ? topicTitles[item] : isPast ? pastTitles[item] : isEvolution ? 'Research evolution' : pageTitles[page];
+    const isPublication=page==='publications' && Object.hasOwn(publicationTitles,item);
+    root.querySelector('#zw-publications-overview').hidden=isPublication;
+    root.querySelector('#zw-publication-detail').hidden=!isPublication;
+    root.querySelectorAll('[data-publication-panel]').forEach(panel => { panel.hidden=!isPublication || panel.dataset.publicationPanel!==item; });
+    const title = isTopic ? topicTitles[item] : isPast ? pastTitles[item] : isPublication ? publicationTitles[item] : isEvolution ? 'Research evolution' : pageTitles[page];
     document.title=(page==='home'?'Zhishan Wang':title+' | Zhishan Wang')+' | NTU EEE';
     if(isEvolution) requestAnimationFrame(drawConnections);
     const nextRoute=page+'/'+item;
@@ -120,10 +126,13 @@
     if(target.closest('[data-research-back],[data-evolution-close]')){navigate('research');return;}
     if(target.closest('[data-evolution-open]')){navigate('research/evolution');return;}
     if(target.closest('[data-past-back]')){navigate('past');return;}
+    if(target.closest('[data-publication-back]')){navigate('publications');return;}
     const research=target.closest('[data-project]');
     if(research){navigate('research/'+research.dataset.project);return;}
     const past=target.closest('[data-past]');
     if(past){navigate('past/'+past.dataset.past);return;}
+    const publication=target.closest('[data-publication]');
+    if(publication){navigate('publications/'+publication.dataset.publication);return;}
     const node=target.closest('[data-evo-node]');
     if(node){traceSelection(node.dataset.evoNode);return;}
     const abstract=target.closest('[data-abstract]');

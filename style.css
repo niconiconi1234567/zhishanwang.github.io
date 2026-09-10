@@ -198,3 +198,57 @@
 @media(max-width:900px){#zw-academic-site .zw-own2-pipeline{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 18px}#zw-academic-site .zw-own2-pipeline article:nth-child(2)::after{content:'↓';right:auto;left:18px;top:auto;bottom:-25px}}
 @media(max-width:800px){#zw-academic-site .zw-own2-home-card,#zw-academic-site .zw-own2-platform-grid{grid-template-columns:1fr}#zw-academic-site .zw-own2-home-card figure{border-right:0;border-bottom:1px solid var(--zw-line)}#zw-academic-site .zw-own2-platform-grid{gap:20px}}
 @media(max-width:560px){#zw-academic-site .zw-own2-home-card>div{padding:21px 19px 23px}#zw-academic-site .zw-own2-home-card h3{font-size:23px}#zw-academic-site .zw-own2-pipeline{grid-template-columns:1fr;gap:19px}#zw-academic-site .zw-own2-pipeline article:not(:last-child)::after,#zw-academic-site .zw-own2-pipeline article:nth-child(2)::after{content:'↓';right:auto;left:18px;top:auto;bottom:-21px}}
+
+/* Interactive publication pages */
+#zw-academic-site .zw-text-button{display:inline;color:var(--zw-accent);border:0;background:none;padding:0;text-align:left;font-size:inherit;line-height:inherit}
+#zw-academic-site .zw-text-button:hover{text-decoration:underline;text-underline-offset:3px}
+#zw-academic-site .zw-research-result{width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:31px;padding:19px 20px;text-align:left;border:1px solid var(--zw-line);border-left:3px solid var(--zw-accent);background:var(--zw-soft)}
+#zw-academic-site .zw-research-result>span{display:block;min-width:0}
+#zw-academic-site .zw-research-result small,#zw-academic-site .zw-topic-publication>span{display:block;font-size:10px;letter-spacing:.09em;color:var(--zw-secondary)}
+#zw-academic-site .zw-research-result strong{display:block;font-family:var(--zw-title);font-size:20px;font-weight:400;line-height:1.35;color:var(--zw-accent);margin:7px 0 5px}
+#zw-academic-site .zw-research-result>span>span{display:block;font-size:12px;line-height:1.65;color:var(--zw-secondary)}
+#zw-academic-site .zw-research-result b{font-size:12px;font-weight:400;color:var(--zw-accent);white-space:nowrap}
+#zw-academic-site .zw-research-result:hover,#zw-academic-site .zw-topic-publication:hover{border-color:var(--zw-accent)}
+#zw-academic-site .zw-topic-publication{display:flex;flex-direction:column;width:100%;padding:17px 18px;text-align:left;border:1px solid var(--zw-line);border-left:3px solid var(--zw-accent);background:var(--zw-soft);margin-top:26px}
+#zw-academic-site .zw-topic-publication strong{display:block;font-family:var(--zw-title);font-size:19px;line-height:1.4;font-weight:400;color:var(--zw-accent);margin:7px 0}
+#zw-academic-site .zw-topic-publication small{font-size:12px;line-height:1.6;color:var(--zw-secondary)}
+#zw-academic-site .zw-publication-group{margin-top:31px}
+#zw-academic-site .zw-publication-card{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);width:100%;padding:0;text-align:left;border:1px solid var(--zw-line);background:var(--zw-soft);overflow:hidden}
+#zw-academic-site .zw-publication-card:hover{border-color:var(--zw-accent)}
+#zw-academic-site .zw-publication-cover{display:block;min-width:0;border-right:1px solid var(--zw-line);background:var(--zw-paper)}
+#zw-academic-site .zw-publication-cover img{display:block;width:100%;height:100%;object-fit:cover}
+#zw-academic-site .zw-publication-card-copy{display:flex;flex-direction:column;justify-content:center;padding:25px 26px;min-width:0}
+#zw-academic-site .zw-publication-status{display:block;font-size:10px;letter-spacing:.1em;color:var(--zw-secondary);line-height:1.6}
+#zw-academic-site .zw-publication-card-copy>strong{font-family:var(--zw-title);font-size:23px;font-weight:400;line-height:1.35;color:var(--zw-accent);margin:10px 0 12px}
+#zw-academic-site .zw-publication-card:hover .zw-publication-card-copy>strong{text-decoration:underline;text-underline-offset:4px}
+#zw-academic-site .zw-publication-card-copy .zw-card-description{font-size:13px}
+#zw-academic-site .zw-publication-card-copy>b{font-size:12px;font-weight:400;color:var(--zw-accent);margin-top:17px}
+#zw-academic-site .zw-paper-header{padding-bottom:24px;border-bottom:1px solid var(--zw-line)}
+#zw-academic-site .zw-paper-header h1{margin-top:9px;max-width:850px}
+#zw-academic-site .zw-paper-authors{font-size:16px;color:var(--zw-ink);margin-top:4px}
+#zw-academic-site .zw-paper-venue{font-size:13px;line-height:1.7;color:var(--zw-secondary);margin:7px 0 9px}
+#zw-academic-site .zw-paper-header .zw-detail-keywords{margin:0}
+#zw-academic-site .zw-own-inline-actions button{display:inline-block;border:1px solid var(--zw-line);padding:8px 13px;font-size:12px;text-decoration:none;background:transparent;color:var(--zw-accent)}
+#zw-academic-site .zw-own-inline-actions button:hover{border-color:var(--zw-accent);background:var(--zw-soft)}
+#zw-academic-site .zw-paper-hero{margin:28px 0 0;border:1px solid var(--zw-line);background:var(--zw-soft)}
+#zw-academic-site .zw-paper-hero img,#zw-academic-site .zw-paper-wide-figure img,#zw-academic-site .zw-paper-split figure img{display:block;width:100%;height:auto}
+#zw-academic-site .zw-paper-hero figcaption,#zw-academic-site .zw-paper-wide-figure figcaption,#zw-academic-site .zw-paper-split figcaption{font-size:11px;line-height:1.55;color:var(--zw-secondary);padding:8px 11px 9px}
+#zw-academic-site .zw-manuscript-note{font-size:12px;line-height:1.75;color:var(--zw-secondary);border-left:2px solid var(--zw-line);padding:3px 0 3px 15px;margin-top:18px}
+#zw-academic-site .zw-paper-contributions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+#zw-academic-site .zw-paper-contributions article{border-top:3px solid var(--zw-line);padding-top:13px;min-width:0}
+#zw-academic-site .zw-paper-contributions article:last-child{border-top-color:var(--zw-accent)}
+#zw-academic-site .zw-paper-contributions span,#zw-academic-site .zw-theory-path article>span{display:block;font-size:10px;letter-spacing:.09em;color:var(--zw-secondary)}
+#zw-academic-site .zw-paper-contributions h3,#zw-academic-site .zw-theory-path h3{font-family:var(--zw-title);font-size:19px;font-weight:400;line-height:1.4;color:var(--zw-accent);margin:8px 0}
+#zw-academic-site .zw-paper-contributions p,#zw-academic-site .zw-theory-path p{font-size:13px;line-height:1.75;color:var(--zw-secondary)}
+#zw-academic-site .zw-theory-path{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:23px}
+#zw-academic-site .zw-theory-path article{position:relative;border-top:3px solid var(--zw-line);padding:13px 4px 0 0;min-width:0}
+#zw-academic-site .zw-theory-path article:last-child{border-top-color:var(--zw-accent)}
+#zw-academic-site .zw-theory-path article:not(:last-child)::after{content:'→';position:absolute;right:-11px;top:-14px;color:var(--zw-secondary);background:var(--zw-paper);padding:0 2px}
+#zw-academic-site .zw-equation{margin-top:11px;padding:9px 10px;background:var(--zw-soft);border:1px solid var(--zw-line);font-family:Georgia,'Times New Roman',serif;font-size:12px;line-height:1.65;overflow-wrap:anywhere}
+#zw-academic-site .zw-paper-split{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(270px,.92fr);gap:26px;align-items:center}
+#zw-academic-site .zw-paper-split figure,#zw-academic-site .zw-paper-wide-figure{margin:0;border:1px solid var(--zw-line);background:var(--zw-soft)}
+#zw-academic-site .zw-paper-split-reverse{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr)}
+#zw-academic-site .zw-paper-wide-figure{margin-bottom:18px}
+@media(max-width:1020px){#zw-academic-site .zw-theory-path{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 17px}#zw-academic-site .zw-theory-path article:nth-child(2)::after,#zw-academic-site .zw-theory-path article:nth-child(4)::after{content:'↓';right:auto;left:18px;top:auto;bottom:-24px}}
+@media(max-width:800px){#zw-academic-site .zw-publication-card,#zw-academic-site .zw-paper-split,#zw-academic-site .zw-paper-split-reverse{grid-template-columns:1fr}#zw-academic-site .zw-publication-cover{border-right:0;border-bottom:1px solid var(--zw-line)}#zw-academic-site .zw-paper-contributions{grid-template-columns:1fr;gap:18px}#zw-academic-site .zw-paper-split{gap:19px;align-items:start}}
+@media(max-width:560px){#zw-academic-site .zw-publication-card-copy{padding:21px 19px}#zw-academic-site .zw-publication-card-copy>strong{font-size:20px}#zw-academic-site .zw-research-result{align-items:flex-start;flex-direction:column;gap:10px;padding:17px}#zw-academic-site .zw-research-result b{white-space:normal}#zw-academic-site .zw-theory-path{grid-template-columns:1fr;gap:19px}#zw-academic-site .zw-theory-path article:not(:last-child)::after,#zw-academic-site .zw-theory-path article:nth-child(2)::after,#zw-academic-site .zw-theory-path article:nth-child(4)::after{content:'↓';right:auto;left:18px;top:auto;bottom:-21px}}
