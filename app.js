@@ -69,17 +69,13 @@
       });
     }
   const pageTitles = {home:'Home',research:'Research',publications:'Papers & Reports',cv:'CV & Honors',past:'Past Projects',personal:'Personal',archive:'Archive'};
-  const topicTitles = {autonomy:'Multi-Agent System Autonomy',swarm:'Swarm Intelligence',football:'Football & Collective Coordination',economics:'Networked Economy & Collective Estimation'};
+  const topicTitles = Object.fromEntries(Array.from(root.querySelectorAll('[data-topic-panel]'), p => [p.dataset.topicPanel, p.querySelector('h1').textContent]));
   const pastTitles = {racing:'Autonomous Racing Control',lander:'FPGA Lunar Lander',sensor:'Optical Heart Rate Sensor',energy:'Real-Time Feedback for Energy Systems'};
-  const publicationTitles = {'icarcv-2026':'Task-Conditioned Distributed Relational Formation Control'};
+  const publicationTitles = Object.fromEntries(Array.from(root.querySelectorAll('[data-publication-panel]'), p => [p.dataset.publicationPanel, p.querySelector('h1').textContent]));
+  const routes = Object.fromEntries(Object.keys(pageTitles).map(p => [p, p==='research' ? [...Object.keys(topicTitles),'evolution'] : p==='publications' ? Object.keys(publicationTitles) : p==='past' ? Object.keys(pastTitles) : []]));
   let currentRoute = '';
   function renderRoute() {
-    let [page='home', item=''] = location.hash.replace(/^#\/?/,'').split('/');
-    if (!Object.hasOwn(pageTitles,page)) page='home';
-    if (page==='research' && item!=='evolution' && !Object.hasOwn(topicTitles,item)) item='';
-    if (page==='past' && !Object.hasOwn(pastTitles,item)) item='';
-    if (page==='publications' && !Object.hasOwn(publicationTitles,item)) item='';
-    if (page!=='research' && page!=='past' && page!=='publications') item='';
+    const {page,item}=window.ZW_CATALOG.resolveRoute(location.hash,routes);
     root.querySelectorAll('[data-panel]').forEach(panel => { panel.hidden=panel.dataset.panel!==page; });
     root.querySelectorAll('[data-page]').forEach(link => {
       if(link.dataset.page===page) link.setAttribute('aria-current','page');
@@ -116,8 +112,16 @@
     if(location.hash===next)renderRoute();
     else location.hash=next;
   }
+  document.querySelector('.zw-skip-link').addEventListener('click', event => {
+    event.preventDefault();
+    const main = root.querySelector('.zw-main');
+    main.focus({preventScroll:true});
+    main.scrollIntoView({block:'start',behavior:'instant'});
+  });
   root.addEventListener('click', event => {
     const target=event.target;
+    const routeLink=target.closest('a[href^="#/"]');
+    if(routeLink && (event.ctrlKey||event.metaKey||event.shiftKey||event.altKey))return;
     const nav=target.closest('[data-page],[data-go]');
     if(nav){
       if(nav.tagName==='A' && (event.ctrlKey||event.metaKey||event.shiftKey||event.altKey))return;
@@ -141,6 +145,27 @@
       if(content){content.hidden=!content.hidden;abstract.setAttribute('aria-expanded',String(!content.hidden));abstract.textContent=content.hidden?'Research summary +':'Research summary −';}
     }
   });
+  // Keep the paper catalogue useful as the publication list grows.
+  let paperStatus='all';
+  const paperSearch=root.querySelector('#zw-paper-search');
+  const paperCards=Array.from(root.querySelectorAll('[data-paper-id]'));
+  function filterPapers(){
+    let count=0;
+    paperCards.forEach(card=>{
+      const match=window.ZW_CATALOG.matchesPaper({status:card.dataset.paperStatus,text:card.textContent},paperStatus,paperSearch.value);
+      card.hidden=!match;if(match)count++;
+    });
+    root.querySelectorAll('[data-paper-group]').forEach(group=>{group.hidden=!Array.from(group.querySelectorAll('[data-paper-id]')).some(card=>!card.hidden);});
+    root.querySelector('#zw-paper-count').textContent=count+' matching featured '+(count===1?'paper':'papers');
+    root.querySelector('#zw-paper-empty').hidden=count!==0;
+  }
+  paperSearch.addEventListener('input',filterPapers);
+  root.querySelectorAll('[data-paper-filter]').forEach(button=>button.addEventListener('click',()=>{
+    paperStatus=button.dataset.paperFilter;
+    root.querySelectorAll('[data-paper-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    filterPapers();
+  }));
+  filterPapers();
   window.addEventListener('hashchange',renderRoute);
   if(window.ResizeObserver)new ResizeObserver(()=>requestAnimationFrame(drawConnections)).observe(canvas);
   else window.addEventListener('resize',drawConnections);
