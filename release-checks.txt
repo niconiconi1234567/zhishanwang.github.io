@@ -1,0 +1,4 @@
+PASS: 28 routes, 66 images, local links, intrinsic sizes, status boundaries, new research content and archive integrity
+PASS: ten atlas threads, graph endpoints, paper routes and profile links
+PASS: deployment ZIP integrity, root index, three videos and no QA page
+PASS: extracted source rebuild produces byte-identical index; extracted source validation passes
