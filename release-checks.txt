@@ -1,4 +1,12 @@
-PASS: 28 routes, 66 images, local links, intrinsic sizes, status boundaries, new research content and archive integrity
-PASS: ten atlas threads, graph endpoints, paper routes and profile links
-PASS: deployment ZIP integrity, root index, three videos and no QA page
-PASS: extracted source rebuild produces byte-identical index; extracted source validation passes
+V4 release checks · 2026-11-01
+PASS: 29 routes; 71 image references; 62 local resource targets; no broken links or incorrect image declarations.
+PASS: 290 complete layout cases across 360, 390, 768, 1024 and 1440 CSS pixels, light and dark themes.
+PASS: 60 focused final regression cases after the Chelsea spacing, personal intro, internal arrow and legacy-image fixes.
+PASS: no page overflow, text overflow, broken/zero-size images or application runtime errors in the browser harness.
+PASS: homepage → OWN FLOW → Back; current launch/source targets; ICSC search/filter; atlas football branch; keyboard personal jumps; theme toggle.
+PASS: 101 baseline asset/PDF/video/archive files unchanged; ICSC PDFs included; five featured paper detail pages retained.
+PASS: bundled OWN FLOW v1.1.0 source has 39 entries and matches the original supplied ZIP byte for byte.
+LIMIT: Chromium with simulated widths; no physical-device, Safari, Firefox or WebGL performance validation.
+LIMIT: RIM Lab requires access verification in this inspection environment.
+PASS: deployment ZIP CRC; root index; three Rescue videos; two ICSC PDFs; no QA/cache files.
+PASS: independent source ZIP extraction and build; all 111 deployed files byte-identical to the full ZIP.
