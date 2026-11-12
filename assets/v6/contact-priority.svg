@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="324pt" viewBox="0 0 720 324" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-12T10:59:03.729677</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 324 
+L 720 324 
+L 720 0 
+L 0 0 
+z
+" style="fill: #f3f5ef"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 126.67149 274.77226 
+L 716.99976 274.77226 
+L 716.99976 39.917584 
+L 126.67149 39.917584 
+z
+" style="fill: #f3f5ef"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 126.67149 274.77226 
+L 126.67149 39.917584 
+" clip-path="url(#p9c323b927f)" style="fill: none; stroke: #ccdcd9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #193640" x="126.67149" y="292.890385" transform="rotate(-0 126.67149 292.890385)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 263.957134 274.77226 
+L 263.957134 39.917584 
+" clip-path="url(#p9c323b927f)" style="fill: none; stroke: #ccdcd9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #193640" x="263.957134" y="292.890385" transform="rotate(-0 263.957134 292.890385)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 401.242778 274.77226 
+L 401.242778 39.917584 
+" clip-path="url(#p9c323b927f)" style="fill: none; stroke: #ccdcd9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #193640" x="401.242778" y="292.890385" transform="rotate(-0 401.242778 292.890385)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 538.528423 274.77226 
+L 538.528423 39.917584 
+" clip-path="url(#p9c323b927f)" style="fill: none; stroke: #ccdcd9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #193640" x="538.528423" y="292.890385" transform="rotate(-0 538.528423 292.890385)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 675.814067 274.77226 
+L 675.814067 39.917584 
+" clip-path="url(#p9c323b927f)" style="fill: none; stroke: #ccdcd9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #193640" x="675.814067" y="292.890385" transform="rotate(-0 675.814067 292.890385)">40</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #193640" x="421.835625" y="318.504135" transform="rotate(-0 421.835625 318.504135)">Longest stationary loose-ball interval (seconds)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #193640" transform="translate(63.51399 115.357012)">Priority 0</text>
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #193640" transform="translate(12.309615 128.794387)">Legacy weighting</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #193640" transform="translate(44.43024 211.216064)">Priority 0.85</text>
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #193640" transform="translate(3.00024 224.653439)">Ball-task weighting</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 126.67149 135.29734 
+L 627.306472 135.29734 
+L 627.306472 97.91231 
+L 126.67149 97.91231 
+z
+" clip-path="url(#p9c323b927f)" style="fill: #ba7056"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 126.67149 231.156392 
+L 126.67149 231.156392 
+L 126.67149 193.771361 
+L 126.67149 193.771361 
+z
+" clip-path="url(#p9c323b927f)" style="fill: #287b78"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193640" x="638.289324" y="120.743887" transform="rotate(-0 638.289324 120.743887)">36.47 s</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193640" x="137.654342" y="216.602939" transform="rotate(-0 137.654342 216.602939)">0.00 s</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5c7278" x="126.67149" y="61.965166" transform="rotate(-0 126.67149 61.965166)">Seed 361 · 60 s physical time · same balanced policies</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193640" x="126.67149" y="15.917584" transform="rotate(-0 126.67149 15.917584)">One fixed-seed collection-stall regression</text>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="me3af37579d" d="M 0 4.609772 
+C 1.222526 4.609772 2.395145 4.124058 3.259601 3.259601 
+C 4.124058 2.395145 4.609772 1.222526 4.609772 0 
+C 4.609772 -1.222526 4.124058 -2.395145 3.259601 -3.259601 
+C 2.395145 -4.124058 1.222526 -4.609772 0 -4.609772 
+C -1.222526 -4.609772 -2.395145 -4.124058 -3.259601 -3.259601 
+C -4.124058 -2.395145 -4.609772 -1.222526 -4.609772 0 
+C -4.609772 1.222526 -4.124058 2.395145 -3.259601 3.259601 
+C -2.395145 4.124058 -1.222526 4.609772 0 4.609772 
+z
+" style="stroke: #287b78"/>
+    </defs>
+    <g>
+     <use xlink:href="#me3af37579d" x="126.67149" y="212.463877" style="fill: #287b78; stroke: #287b78"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9c323b927f">
+   <rect x="126.67149" y="39.917584" width="590.32827" height="234.854676"/>
+  </clipPath>
+ </defs>
+</svg>
