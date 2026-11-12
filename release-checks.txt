@@ -1,7 +1,11 @@
-V5 release checks, 2026-11-02
-PASS 30 page routes including all 29 original routes. 78 image references, 69 local resource targets and intrinsic dimensions verified.
-PASS 300 Chromium layout cases at 360, 390, 768, 1024 and 1440 CSS pixels in light and dark themes. No measured overflow, broken images or application errors.
-PASS Paper filters, ECC detail, ICSC search, strategic atlas node, history Back, keyboard music navigation, photo loading and mobile gallery.
-PASS 105 V4 files with immutable content match the preceding release, including all shipped PDFs, original photographs, OWN FLOW source, Rescue media and archive.
-PASS Four ICSC figures use the attached submission PDFs. Consultation NRMSE checked against Table III: 0.8212 to 0.4343, historical holdout 0.8350 to 0.4000.
-Full and source packages include the complete static site. See the independent archive validation and release review.
+V6 release checks · 2026-11-12
+PASS 30 page routes; 86 image references; 92 local resource targets; image dimensions and local targets validated.
+PASS 300 Chromium layout cases: 30 routes x 5 widths (360/390/768/1024/1440) x 2 themes. No measured overflow, broken images or application runtime errors.
+PASS 60 additional release-panel cases: 6 versions x 5 widths x 2 themes.
+PASS Manual release selection, Home/End/Left/Right keyboard navigation, section jump, desktop and mobile-dark visual review.
+PASS Seven public deployment addresses inspected; six distinct application releases identified. flow2 is an additional v1.1.0 deployment.
+PASS Six bundled software ZIPs match the supplied archives byte-for-byte; package versions and internal CRCs verified.
+PASS 116 V5 files preserved byte-for-byte, including original photographs, PDFs, videos, music assets and archived material. HTML, documentation and research-atlas exports were updated.
+PASS Supplied OWN FLOW v1.5: 119 unit tests; network reproduction tolerance 1e-9; mission-report numerical reproduction; contact-priority regression reproduction.
+Interpretation: simulated browser widths, not physical-device testing. One-seed contact-priority result is not evidence of general tactical superiority. Network fit does not establish causal communication recovery.
+Full/source ZIP equivalence and independent rebuild are checked by tests/check_archives.py in the source package.

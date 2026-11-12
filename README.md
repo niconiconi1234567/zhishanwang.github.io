@@ -1,8 +1,9 @@
-# Zhishan Wang academic website · V5
+# Zhishan Wang academic website · V6
 
-Upload all contents of this folder to your website root. Keep index.html alongside assets, media, publications, downloads and archive. All images, PDFs and Rescue videos are included. No build step is required for this deployment package. See README-UPLOAD-ZH.md for Chinese instructions.
+Upload every file and folder here to the existing website publishing root. Keep index.html alongside assets, media, publications, downloads and archive. All images, PDFs, Rescue videos and the six OWN FLOW release packages are included. This deployment package needs no build step. See README-UPLOAD-ZH.md for instructions.
 
-OWN FLOW current version: https://own-football-flow1p1.pages.dev/
-Platform introduction: #/research/own-flow
+OWN FLOW current release: https://own-football-flow1p5.pages.dev/
+Version history and experiment guide: #/research/own-flow
+Research starter: downloads/OWN_FLOW_Research_Starter.md
 
-Source and further editing instructions are supplied separately in the source ZIP.
+The separate source ZIP includes maintenance instructions and validation tools.

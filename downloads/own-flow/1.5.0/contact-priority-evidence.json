@@ -1,0 +1,43 @@
+{
+  "scope": "Single deterministic regression of a reproduced collection deadlock, not general tactical superiority.",
+  "results": [
+    {
+      "engine": "1.5.0",
+      "seed": 361,
+      "physicalSeconds": 60,
+      "contactPriority": 0,
+      "score": [
+        0,
+        0
+      ],
+      "passes": [
+        2,
+        1
+      ],
+      "shots": [
+        0,
+        0
+      ],
+      "longestUnownedBallBelowPointOneMetresPerSecond": 36.46666666666667
+    },
+    {
+      "engine": "1.5.0",
+      "seed": 361,
+      "physicalSeconds": 60,
+      "contactPriority": 0.85,
+      "score": [
+        0,
+        0
+      ],
+      "passes": [
+        7,
+        7
+      ],
+      "shots": [
+        0,
+        3
+      ],
+      "longestUnownedBallBelowPointOneMetresPerSecond": 0
+    }
+  ]
+}
