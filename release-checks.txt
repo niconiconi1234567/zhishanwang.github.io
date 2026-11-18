@@ -1,11 +1,13 @@
-V6 release checks · 2026-11-12
-PASS 30 page routes; 86 image references; 92 local resource targets; image dimensions and local targets validated.
-PASS 300 Chromium layout cases: 30 routes x 5 widths (360/390/768/1024/1440) x 2 themes. No measured overflow, broken images or application runtime errors.
-PASS 60 additional release-panel cases: 6 versions x 5 widths x 2 themes.
-PASS Manual release selection, Home/End/Left/Right keyboard navigation, section jump, desktop and mobile-dark visual review.
-PASS Seven public deployment addresses inspected; six distinct application releases identified. flow2 is an additional v1.1.0 deployment.
-PASS Six bundled software ZIPs match the supplied archives byte-for-byte; package versions and internal CRCs verified.
-PASS 116 V5 files preserved byte-for-byte, including original photographs, PDFs, videos, music assets and archived material. HTML, documentation and research-atlas exports were updated.
-PASS Supplied OWN FLOW v1.5: 119 unit tests; network reproduction tolerance 1e-9; mission-report numerical reproduction; contact-priority regression reproduction.
-Interpretation: simulated browser widths, not physical-device testing. One-seed contact-priority result is not evidence of general tactical superiority. Network fit does not establish causal communication recovery.
-Full/source ZIP equivalence and independent rebuild are checked by tests/check_archives.py in the source package.
+Zhishan Wang academic website V7 · 18 November 2026
+
+30 main routes; 95 page-image references; 106 relative asset and document references.
+Chromium: 300/300 main route, viewport and theme combinations passed.
+Chromium: 280/280 slide-reader combinations and 60/60 OWN FLOW panel combinations passed.
+Accepted filter: 3 featured papers; Accepted plus ICSC: 2 papers.
+Original 28-slide PPTX: 8658145 bytes, SHA-256 2f9a65414a1a30e4a6ab5b32fdc8108115cd6498ed6dfce2f3eee812c0c5e66d.
+The original MP4 played in Chromium, 1440 × 810, 67.84 seconds.
+28 slide images match the original embedded artwork pixel for pixel.
+PDF: 28 source-matching page images, 28 bookmarks and 7 hyperlink rectangles.
+153 unchanged V6 deployment files matched their previous SHA-256.
+Both release ZIPs are checked for CRC and identical deployment files.
+See tests/check_archives.py in the maintenance package to reproduce the clean rebuild.
